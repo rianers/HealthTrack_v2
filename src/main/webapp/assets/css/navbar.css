@@ -1,0 +1,82 @@
+.custom-navbar {
+  min-height: 75px;
+  background-color: var(--bg-navbar);
+  padding: 1.125rem 4.375rem;
+  z-index: 100;
+  box-shadow: 0px 10px 15px -1px #000000;
+}
+
+.navbar-item-active {
+  color: var(--bg-purple-dark) !important;
+  border-bottom-color: var(--bg-purple-dark) !important;
+}
+
+.navbar-item-active > span {
+  border-bottom-color: var(--bg-purple-dark) !important;
+}
+
+.custom-navbar-chevron {
+  display: none;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.custom-navbar-content {
+  gap: 10px;
+  text-transform: uppercase;
+  max-height: 25px;
+}
+
+.custom-navbar-content > a > span  {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid white;
+}
+.custom-navbar-content > a {
+	text-decoration: none;
+}
+.custom-navbar-content > a > span:hover {
+  color: var(--bg-purple-dark);
+  border-bottom-color: var(--bg-purple-dark);
+}
+
+.logo {
+  max-width: 265px;
+}
+
+.rotate180 {
+  transform: rotate(-180deg);
+}
+
+.open {
+  max-height: 400px !important;
+}
+@media only screen and (max-width: 768px) {
+  .custom-navbar {
+    flex-direction: column-reverse !important;
+    gap: 0px;
+  }
+  .custom-navbar-content {
+    flex-direction: column !important;
+    transition: max-height 0.4s ease;
+    justify-content: space-evenly;
+    align-items: center;
+    max-height: none;
+    gap: 7px;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .custom-navbar-content > a > span {
+    font-size: 14px;
+  }
+  .custom-navbar-chevron {
+    display: block;
+    height: auto;
+  }
+  .logo {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+}
