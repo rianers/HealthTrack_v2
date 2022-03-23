@@ -6,7 +6,7 @@ public class DBManager {
 
 	public static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
 
-	public static final String URL = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
+	public static final String URL = "";
 
 	public static final String USER = "";
 
